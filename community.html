@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Community List</title>
+  <link href="community.css" rel="stylesheet" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-lg" style="background-color: #e3f2fd;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="community.html">Community members</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="community.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="favorite list/favorite.html">Favorite</a>
+          </li>
+        </ul>
+        <!--search bar-->
+        <form class="d-flex" role="search" id="search-form">
+          <input class="form-control me-2" type="search" placeholder="Keyword..." aria-label="Search" id="search-input">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- display users -->
+  <div class="user-container d-flex flex-row justify-content-center flex-wrap mt-2">
+    <!-- 放入user card -->
+  </div>
+
+  <!-- paginator -->
+  <nav aria-label="Page navigation example" class="d-flex justify-content-center mb-4">
+    <ul class="pagination" id="paginator">
+      <!-- 放入所需分頁數目 -->
+    </ul>
+  </nav>
+  <!-- Modal -->
+  <div class="modal modal-lg" tabindex="-1" id="user-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <!--  user name  -->
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex flex-row">
+          <!--  user avatar -->
+          <img class="user-modal-image w-50" src="" alt="user photo">
+          <ul id="user-modal-info" class="list-unstyled fs-4">
+            <!--user 的 gender、age、region、birthday、email-->
+          </ul>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./community.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
